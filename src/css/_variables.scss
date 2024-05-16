@@ -1,0 +1,17 @@
+:root {
+    --black: rgba(0, 0, 0, 0.87);
+    --light-black: #d0cfcf;
+    --red: #cb3d40;
+    --yellow: #F4E041;
+    --blue: #00BDD3;
+    --grey: #7e7e7e;
+    --light-grey: #F8F8F8;
+    --button-hover: #ffe302;
+    --button-disabled: #b4b4b4;
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$breakpoint-mobile: 359px;
+$breakpoint-tablet: 767px;
+$breakpoint-desktop: 1023px;
+$breakpoint-full-size-desktop: 2559px;
