@@ -15,3 +15,41 @@ $breakpoint-mobile: 359px;
 $breakpoint-tablet: 767px;
 $breakpoint-desktop: 1023px;
 $breakpoint-full-size-desktop: 1169px;
+
+.container {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+    outline: 1px solid salmon;
+}
+
+@media screen and (min-width: $breakpoint-mobile) {
+    .container {
+        max-width: 360px;
+    }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    .container {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    .container {
+        max-width: 1024px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media screen and (min-width: $breakpoint-full-size-desktop) {
+    .container {
+        max-width: 1170px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
