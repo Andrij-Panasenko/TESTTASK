@@ -2,7 +2,7 @@ import React from 'react';
 import sprite from '../../assets/sprite.svg';
 import '../../css/header/header-mobile.scss';
 import '../../css/header/header-tablet.scss';
-import { PrimaryButton } from '../buttons/PrimaryButton.jsx';
+import { PrimaryButton } from '../Buttons/PrimaryButton.jsx';
 
 export const Header = () => {
     return (
