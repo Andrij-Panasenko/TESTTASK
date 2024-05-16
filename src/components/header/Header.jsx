@@ -3,6 +3,7 @@ import sprite from '../../assets/sprite.svg';
 import '../../css/header/header-mobile.scss';
 import '../../css/header/header-tablet.scss';
 import '../../css/header/header-desktop.scss';
+import '../../css/header/header-full-size-desktop.scss';
 import { PrimaryButton } from '../Buttons/PrimaryButton.jsx';
 
 export const Header = () => {
