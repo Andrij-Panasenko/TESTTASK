@@ -12,6 +12,7 @@
     --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+//breakpoints for screen sizes
 $breakpoint-mobile: 359px;
 $breakpoint-tablet: 767px;
 $breakpoint-desktop: 1023px;
@@ -26,14 +27,14 @@ $breakpoint-full-size-desktop: 1169px;
 }
 
 @media screen and (min-width: $breakpoint-mobile) {
-    .container {
-        max-width: 360px;
-    }
+    // .container {
+    //     max-width: 360px;
+    // }
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
     .container {
-        max-width: 768px;
+        // max-width: 768px;
         padding-left: 32px;
         padding-right: 32px;
     }
@@ -41,7 +42,7 @@ $breakpoint-full-size-desktop: 1169px;
 
 @media screen and (min-width: $breakpoint-desktop) {
     .container {
-        max-width: 1024px;
+        // max-width: 1024px;
         padding-left: 60px;
         padding-right: 60px;
     }
@@ -49,7 +50,7 @@ $breakpoint-full-size-desktop: 1169px;
 
 @media screen and (min-width: $breakpoint-full-size-desktop) {
     .container {
-        max-width: 1170px;
+        // max-width: 1170px;
         padding-left: 0;
         padding-right: 0;
     }
