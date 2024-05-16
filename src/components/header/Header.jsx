@@ -1,6 +1,6 @@
 import React from 'react';
 import sprite from '../../assets/sprite.svg';
-import '../../css/header.scss';
+import '../../css/header/header-mobile.scss';
 import { PrimaryButton } from '../buttons/PrimaryButton.jsx';
 
 export const Header = () => {
