@@ -3,7 +3,7 @@ import { SectionTitle } from '../SectionTitle/SectionTitle.jsx';
 import { PrimaryButton } from '../Buttons/PrimaryButton.jsx';
 import '../../css/_variables.scss';
 import '../../css/hero/hero-mobile.scss';
-import '../../css/hero/hero-tablet.scss'
+import '../../css/hero/hero-tablet.scss';
 
 export const Hero = () => {
     return (
