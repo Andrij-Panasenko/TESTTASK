@@ -1,0 +1,18 @@
+@import '../_variables.scss';
+
+@media screen and (min-width: $breakpoint-tablet) {
+    .hero-section {
+        padding-top: 89px;
+        padding-bottom: 88px;
+    }
+
+    .hero-title {
+        max-width: 380px;
+        margin: 0 auto 21px;
+    }
+
+    .hero-descr {
+        max-width: 380px;
+        margin: 0 auto 32px;
+    }
+}
