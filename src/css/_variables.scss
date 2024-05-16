@@ -50,7 +50,7 @@ $breakpoint-full-size-desktop: 1169px;
 
 @media screen and (min-width: $breakpoint-full-size-desktop) {
     .container {
-        // max-width: 1170px;
+        max-width: 1170px;
         padding-left: 0;
         padding-right: 0;
     }
