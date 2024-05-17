@@ -1,0 +1,7 @@
+@import '../../variables.scss';
+
+@media screen and (min-width: $breakpoint-desktop) {
+    .user-item {
+        width: calc((100% - 29px * 2) / 3);
+    }
+}

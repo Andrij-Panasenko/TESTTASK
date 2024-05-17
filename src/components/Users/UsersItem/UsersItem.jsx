@@ -1,6 +1,7 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import '../../../css/users/usersItem/users-item-mobile.scss';
 import '../../../css/users/usersItem/users-item-tablet.scss';
+import '../../../css/users/usersItem/users-item-desktop.scss';
 
 
 export const UsersItem = ({data}) => {

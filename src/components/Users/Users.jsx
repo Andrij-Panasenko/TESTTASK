@@ -4,6 +4,7 @@ import { getUsers } from '../../api/getUsers.js';
 import '../../css/_variables.scss';
 import '../../css/users/users-mobile.scss';
 import '../../css/users/users-tablet.scss';
+import '../../css/users/users-desktop.scss';
 import { SectionTitle } from '../SectionTitle/SectionTitle.jsx';
 import { PrimaryButton } from '../Buttons/PrimaryButton.jsx';
 
