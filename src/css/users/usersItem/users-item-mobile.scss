@@ -1,0 +1,44 @@
+@import '../../variables.scss';
+
+.user-item {
+    padding: 20px;
+    flex-grow: 1;
+
+    background-color: var(--white);
+
+    border-radius: 10px;
+
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    .user-avatar {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+    }
+
+    .user-name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 162%;
+        color: var(--black);
+    }
+
+    .user-data-wrapp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
