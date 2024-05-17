@@ -9,16 +9,26 @@ import { SectionTitle } from '../SectionTitle/SectionTitle.jsx';
 import { PrimaryButton } from '../Buttons/PrimaryButton.jsx';
 
 export const Users = () => {
+    const [page, setPage] = useState(1);
+    const [count, _] = useState(6);
+    const [totalPages, setTotalPages] = useState(0)
     const [usersList, setUsersList] = useState([]);
 
     useEffect(() => {
         const fetchUsers = async () => {
-            const data = await getUsers();
+            const data = await getUsers(page, count);
+
             setUsersList(data.users);
+            setTotalPages(data.total_pages);
             return data;
         };
         fetchUsers();
-    }, []);
+    }, [page, count]);
+
+    //show more handler
+    const handleLoadMore = () => {
+        setPage((prevPage) => prevPage + 1);
+    };
 
     return (
         <>
@@ -37,11 +47,14 @@ export const Users = () => {
                         ))}
                     </ul>
                     {/* Button 'Show more' */}
-                    <PrimaryButton
-                        className="users-button"
-                        name="Show more"
-                        type="button"
-                    />
+                    {page < totalPages && (
+                        <PrimaryButton
+                            className="users-button"
+                            name="Show more"
+                            type="button"
+                            onClick={handleLoadMore}
+                        />
+                    )}
                 </div>
             </section>
         </>
