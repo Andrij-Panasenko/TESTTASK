@@ -3,6 +3,7 @@ import { UsersItem } from './UsersItem/UsersItem.jsx';
 import { getUsers } from '../../api/getUsers.js';
 import '../../css/_variables.scss';
 import '../../css/users/users-mobile.scss';
+import '../../css/users/users-tablet.scss';
 import { SectionTitle } from '../SectionTitle/SectionTitle.jsx';
 import { PrimaryButton } from '../Buttons/PrimaryButton.jsx';
 

@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import '../../../css/users/usersItem/users-item-mobile.scss';
+import '../../../css/users/usersItem/users-item-tablet.scss';
 
 
 export const UsersItem = ({data}) => {
