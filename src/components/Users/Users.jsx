@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { UsersItem } from './UsersItem/UsersItem.jsx';
 import { getUsers } from '../../api/getUsers.js';
 import '../../css/_variables.scss';
-import '../../css/users/users.scss';
+import '../../css/users/users-mobile.scss';
 import { SectionTitle } from '../SectionTitle/SectionTitle.jsx';
 import { PrimaryButton } from '../Buttons/PrimaryButton.jsx';
 
@@ -22,16 +22,19 @@ export const Users = () => {
         <>
             <section className="users-section">
                 <div className="container">
+                    {/* Heading of current section */}
                     <SectionTitle
                         tag="h2"
                         title="Working with GET request"
                         className="users-title"
                     />
+                    {/* Mapping an array of users and passing prop 'data' with one user */}
                     <ul className="users-list">
                         {usersList.map((user) => (
                             <UsersItem key={user.id} data={user} />
                         ))}
                     </ul>
+                    {/* Button 'Show more' */}
                     <PrimaryButton
                         className="users-button"
                         name="Show more"
