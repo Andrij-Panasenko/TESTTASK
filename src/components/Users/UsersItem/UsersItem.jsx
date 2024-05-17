@@ -3,11 +3,9 @@ import '../../../css/users/usersItem/users-item-mobile.scss';
 import '../../../css/users/usersItem/users-item-tablet.scss';
 import '../../../css/users/usersItem/users-item-desktop.scss';
 
-
-export const UsersItem = ({data}) => {
+export const UsersItem = ({ data }) => {
     const { name, email, photo, position, phone } = data;
 
-   
     return (
         <>
             <li className="user-item">

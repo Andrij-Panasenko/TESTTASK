@@ -15,12 +15,20 @@ export const Users = () => {
     const [count, _] = useState(6);
     const [totalPages, setTotalPages] = useState(0);
     const [usersList, setUsersList] = useState([]);
+    console.log('🚀 ~ Users ~ usersList:', usersList);
+
+    //sort users by register time. The newest first
+    const filtrationUsers = (users) => {
+        return users.sort(
+            (a, b) => b.registration_timestamp - a.registration_timestamp
+        );
+    };
 
     useEffect(() => {
         const fetchUsers = async () => {
             const data = await getUsers(page, count);
 
-            setUsersList(data.users);
+            setUsersList(filtrationUsers(data.users));
             setTotalPages(data.total_pages);
             return data;
         };
