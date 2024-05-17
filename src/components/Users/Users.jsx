@@ -9,9 +9,11 @@ import { SectionTitle } from '../SectionTitle/SectionTitle.jsx';
 import { PrimaryButton } from '../Buttons/PrimaryButton.jsx';
 
 export const Users = () => {
+    //page counter
     const [page, setPage] = useState(1);
+    //count user items per page
     const [count, _] = useState(6);
-    const [totalPages, setTotalPages] = useState(0)
+    const [totalPages, setTotalPages] = useState(0);
     const [usersList, setUsersList] = useState([]);
 
     useEffect(() => {
