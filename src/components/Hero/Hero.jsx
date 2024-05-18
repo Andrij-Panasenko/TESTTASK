@@ -5,9 +5,16 @@ import '../../css/_variables.scss';
 import '../../css/hero/hero-mobile.scss';
 import '../../css/hero/hero-tablet.scss';
 
+import heroBg from '../../assets/hero-bg.jpeg';
+
 export const Hero = () => {
     return (
-        <section className="hero-section hero-bg">
+        <section
+            style={{
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroBg})`,
+            }}
+            className="hero-section"
+        >
             <div className="container">
                 <SectionTitle
                     className="hero-title"
