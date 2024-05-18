@@ -118,6 +118,9 @@
     gap: 12px;
 }
 
+.signup-submit-btn {}
+
+
 .custom-radio {
     display: inline-flex;
     align-items: center;
@@ -154,7 +157,6 @@
     cursor: pointer;
     width: 100%;
     max-width: 380px;
-    margin: 0 auto;
     margin-bottom: 50px;
 
     .upload-button {
@@ -200,8 +202,4 @@
         width: 0;
         height: 0;
     }
-}
-
-.button {
-    margin: 0 auto;
 }

@@ -172,26 +172,33 @@ export const SighUpForm = () => {
                                 </p>
                             )}
                         </div>
-                        <label className="signup-label-avatar" htmlFor="avatar">
-                            <div className="upload-button">
-                                <p className="upload-title">Upload</p>
-                            </div>
-                            <div className="upload-field">
-                                <p className="upload-text">Upload your photo</p>
-                            </div>
-                            <input
-                                id="avatar"
-                                name="avatar"
-                                accept="image/jpeg, image/png"
-                                className="signup-input-avatar"
-                                type="file"
-                                placeholder="Upload your photo"
-                            />
-                        </label>
+                        <div>
+                            <label
+                                className="signup-label-avatar"
+                                htmlFor="avatar"
+                            >
+                                <div className="upload-button">
+                                    <p className="upload-title">Upload</p>
+                                </div>
+                                <div className="upload-field">
+                                    <p className="upload-text">
+                                        Upload your photo
+                                    </p>
+                                </div>
+                                <input
+                                    id="avatar"
+                                    name="avatar"
+                                    accept="image/jpeg, image/png"
+                                    className="signup-input-avatar"
+                                    type="file"
+                                    placeholder="Upload your photo"
+                                />
+                            </label>
+                        </div>
                         <PrimaryButton
                             name="Sign up"
                             type="submit"
-                            className="button"
+                            // className="signup-submit-btn"
                         />
                     </form>
                 </div>
