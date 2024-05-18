@@ -179,11 +179,25 @@ export const SighUpForm = () => {
                             )}
                         </div>
                         <div>
-                            {/* <input
-                                className="signup-input"
-                                type="file"
-                                placeholder="Upload your photo"
-                            /> */}
+                            <label
+                                className="signup-label-avatar"
+                                htmlFor="avatar"
+                            >
+                                <div className="upload-button">
+                                    <p className="upload-title">Upload</p>
+                                </div>
+                               <div className='upload-field'>
+                                 <p className='upload-text'>Upload your photo</p>
+                               </div>
+                                <input
+                                    id="avatar"
+                                    name="avatar"
+                                    accept="image/jpeg, image/png"
+                                    className="signup-input-avatar"
+                                    type="file"
+                                    placeholder="Upload your photo"
+                                />
+                            </label>
                         </div>
                         <PrimaryButton
                             name="Sign up"
@@ -196,4 +210,3 @@ export const SighUpForm = () => {
         </>
     );
 };
-
