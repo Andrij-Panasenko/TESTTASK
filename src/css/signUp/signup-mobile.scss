@@ -32,11 +32,13 @@
     position: relative;
 }
 
-.signup-alert {
+.alert {
     font-size: 12px;
     line-height: 117%;
     color: var(--red);
+}
 
+.signup-alert {
     position: absolute;
 
     left: calc(180px + 16px);
@@ -44,10 +46,6 @@
 }
 
 .signup-position-alert {
-    font-size: 12px;
-    line-height: 117%;
-    color: var(--red);
-
     position: absolute;
     left: 16px;
 }
@@ -112,9 +110,6 @@
     gap: 12px;
 }
 
-.signup-submit-btn {}
-
-
 .custom-radio {
     display: inline-flex;
     align-items: center;
@@ -146,11 +141,13 @@
 
 
 .signup-label-avatar {
+    position: relative;
     display: flex;
     align-items: center;
     cursor: pointer;
     width: 100%;
     max-width: 380px;
+    margin: 0 auto;
     margin-bottom: 50px;
 
     .upload-button {
@@ -196,4 +193,14 @@
         width: 0;
         height: 0;
     }
+
+    .signup-avatar-alert {
+        position: absolute;
+        bottom: -17px;
+        left: 16px;
+    }
+}
+
+.button {
+    margin: 0 auto;
 }
