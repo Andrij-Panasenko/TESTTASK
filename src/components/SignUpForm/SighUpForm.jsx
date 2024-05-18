@@ -186,9 +186,11 @@ export const SighUpForm = () => {
                                 <div className="upload-button">
                                     <p className="upload-title">Upload</p>
                                 </div>
-                               <div className='upload-field'>
-                                 <p className='upload-text'>Upload your photo</p>
-                               </div>
+                                <div className="upload-field">
+                                    <p className="upload-text">
+                                        Upload your photo
+                                    </p>
+                                </div>
                                 <input
                                     id="avatar"
                                     name="avatar"
