@@ -21,7 +21,7 @@ export const validateSignUpForm = Yup.object().shape({
     role: Yup.string()
         .oneOf(['frontend developer', 'backend developer', 'designer', 'qa'])
         .required('Please, select your role'),
-    avatar: Yup.mixed().test(
+    photo: Yup.mixed().test(
         'fileType',
         'Unsupported file format. Please upload a jpeg or png file.', value => {
             return value && value[0] && fileExtantions.includes(value[0].type);
