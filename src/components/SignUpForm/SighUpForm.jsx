@@ -197,28 +197,3 @@ export const SighUpForm = () => {
     );
 };
 
-//   <Formik
-//       initialValues={{
-//           name: '',
-//           email: '',
-//           phone: '',
-//       }}
-//       validationSchema={validateSignUpForm}
-//       onSubmit={(values, actions) => {
-//           console.log(values);
-//           actions.resetForm();
-//       }}
-//   >
-//       <Form>
-//           <Field name="name" type="text" placeholder="Your name" />
-//           <ErrorMessage name="name" component="span" />
-
-//           <Field name="email" type="email" placeholder="Email" />
-//           <ErrorMessage name="email" component="span" />
-
-//           <Field name="phone" type="tel" placeholder="Phone" />
-//           <ErrorMessage name="phone" component="span" />
-
-//           <button type="submit">Sigh up</button>
-//       </Form>
-//   </Formik>;
