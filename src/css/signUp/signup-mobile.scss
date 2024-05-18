@@ -86,17 +86,23 @@
 }
 
 .signup-position-wrapp {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
     position: relative;
     max-width: 380px;
 
     margin: 0 auto 47px;
 
+    .signup-input-text-wrapp {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
     .signup-position-title {
         font-size: 16px;
         line-height: 162%;
         color: var(--black);
-
-        margin-bottom: 11px;
     }
 }
 

@@ -93,7 +93,7 @@ export const SighUpForm = () => {
                                 Select your position
                             </p>
 
-                            <div>
+                            <div className="signup-input-text-wrapp">
                                 <input
                                     className="visually-hidden signup-input-position"
                                     aria-invalid={errors.name ? true : false}
@@ -111,8 +111,6 @@ export const SighUpForm = () => {
                                     </span>
                                     Frontend developer
                                 </label>
-                            </div>
-                            <div>
                                 <input
                                     className="visually-hidden signup-input-position"
                                     aria-invalid={errors.name ? true : false}
@@ -130,8 +128,6 @@ export const SighUpForm = () => {
                                     </span>
                                     Backend developer
                                 </label>
-                            </div>
-                            <div>
                                 <input
                                     className="visually-hidden signup-input-position"
                                     aria-invalid={errors.name ? true : false}
@@ -149,8 +145,6 @@ export const SighUpForm = () => {
                                     </span>
                                     Designer
                                 </label>
-                            </div>
-                            <div>
                                 <input
                                     className="visually-hidden signup-input-position"
                                     aria-invalid={errors.name ? true : false}
