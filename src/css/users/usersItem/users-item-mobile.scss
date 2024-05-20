@@ -49,5 +49,39 @@
             text-overflow: ellipsis;
             white-space: nowrap;
         }
+
+        .user-email {
+            cursor: pointer;
+        }
+
+        .tooltip-container {
+            position: relative;
+            
+
+            .tooltip {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 0.5em;
+                opacity: 0;
+                transition: all 0.3s;
+                background: var(--black);
+                color: var(--white);
+
+                border-radius: 4px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 162%;
+            }
+
+            &:hover .tooltip {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
     }
 }

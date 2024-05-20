@@ -17,7 +17,12 @@ export const UsersItem = ({ data }) => {
                 <h3 className="user-name">{name}</h3>
                 <div className="user-data-wrapp">
                     <p className="user-position">{position}</p>
-                    <p className="user-email">{email}</p>
+                    <div className="tooltip-container">
+                        <p className="user-email">{email}</p>
+                        <a href="#" className="tooltip">
+                            {email}
+                        </a>
+                    </div>
                     <p className="user-phone">{phone}</p>
                 </div>
             </li>
