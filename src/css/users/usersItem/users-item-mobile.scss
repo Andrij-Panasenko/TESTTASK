@@ -40,11 +40,9 @@
         .user-position,
         .user-email,
         .user-phone {
-            max-width: calc(100% - 20px);
             font-weight: 400;
             font-size: 16px;
             line-height: 162%;
-
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -55,18 +53,20 @@
         }
 
         .tooltip-container {
+            max-width: calc(100% - 20px);
             position: relative;
-            
 
             .tooltip {
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
-                padding: 0.5em;
+                padding: 3px 16px;
                 opacity: 0;
-                transition: all 0.3s;
+                visibility: hidden;
                 background: var(--black);
                 color: var(--white);
+
+                pointer-events: none;
 
                 border-radius: 4px;
                 height: 32px;
@@ -79,6 +79,7 @@
             }
 
             &:hover .tooltip {
+                pointer-events: visible;
                 opacity: 1;
                 visibility: visible;
             }
